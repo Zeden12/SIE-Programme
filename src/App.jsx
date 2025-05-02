@@ -1,8 +1,12 @@
-
+import React from "react"
+import MainLayout from "./layouts/MainLayout"
 function App() {
   return (
     <div>
-      <p className="text-amber-300">SIE Programme</p>
+      <MainLayout>
+        <h1>hello world</h1>
+        <p>this is a test</p>
+      </MainLayout>
     </div>
   )
 }
