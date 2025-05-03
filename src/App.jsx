@@ -1,13 +1,17 @@
 import React from "react"
 import MainLayout from "./layouts/MainLayout"
+import { BrowserRouter as Router, Routes } from "react-router-dom"
+import { Route } from "react-router-dom"
+import Homepage from "./pages/Homepage"
 function App() {
   return (
-    <div>
+    <Router>
       <MainLayout>
-        <h1>hello world</h1>
-        <p>this is a test</p>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
       </MainLayout>
-    </div>
+    </Router>
   )
 }
 

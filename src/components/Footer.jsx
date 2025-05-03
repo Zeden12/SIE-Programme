@@ -1,66 +1,135 @@
-// components/Footer.jsx
 import React from 'react';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-6">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between">
-          {/* Mission Statement */}
-          <div className="mb-8 md:mb-0 md:w-1/3">
-            <h2 className="text-2xl font-bold mb-4">WISE Academy</h2>
-            <p className="text-gray-300">
-              Transforming education through innovation and technology, preparing students for the challenges of tomorrow.
+    <footer className="bg-black text-white">
+      {/* Decorative top border */}
+      <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-1 w-full"></div>
+      
+      <div className="container mx-auto px-4 pt-16 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Programme Description with Social Links */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              SIE Programme
+            </h2>
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              Empowering the next generation through innovative education and cutting-edge technology.
             </p>
+            <div className="flex space-x-5">
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-xl transition duration-300 transform hover:-translate-y-1">
+                <FaFacebook />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-sky-400 text-xl transition duration-300 transform hover:-translate-y-1">
+                <FaTwitter />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-blue-500 text-xl transition duration-300 transform hover:-translate-y-1">
+                <FaLinkedin />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-pink-500 text-xl transition duration-300 transform hover:-translate-y-1">
+                <FaInstagram />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-red-500 text-xl transition duration-300 transform hover:-translate-y-1">
+                <FaYoutube />
+              </a>
+            </div>
           </div>
           
           {/* Quick Links */}
-          <div className="mb-8 md:mb-0">
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-white transition">Home</a></li>
-              <li><a href="/about" className="text-gray-300 hover:text-white transition">About Us</a></li>
-              <li><a href="/team" className="text-gray-300 hover:text-white transition">Our Team</a></li>
-              <li><a href="/partners" className="text-gray-300 hover:text-white transition">Partners</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-white transition">Contact</a></li>
+          <div>
+            <h3 className="text-xl font-semibold mb-6 text-white">Quick Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="/" className="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition"></span>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition"></span>
+                  About SIE
+                </a>
+              </li>
+              <li>
+                <a href="/curriculum" className="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition"></span>
+                  Curriculum
+                </a>
+              </li>
+              <li>
+                <a href="/admissions" className="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition"></span>
+                  Admissions
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition"></span>
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
           
           {/* Contact Info */}
-          <div className="mb-8 md:mb-0">
-            <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>0788 777 888</li>
-              <li>0780 111 910</li>
-              <li>wiseacademyrw@gmail.com</li>
-              <li>Kigali, Rwanda</li>
+          <div>
+            <h3 className="text-xl font-semibold mb-6 text-white">Contact Us</h3>
+            <ul className="space-y-4 text-gray-400">
+              <li className="flex items-start">
+                <span className="text-blue-400 mr-3 mt-1">✆</span>
+                <div>
+                  <p className="hover:text-white transition duration-300">0788 777 888</p>
+                  <p className="hover:text-white transition duration-300">0780 111 910</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-400 mr-3 mt-1">✉</span>
+                <div>
+                  <p className="hover:text-white transition duration-300">info@sieprogramme.com</p>
+                  <p className="hover:text-white transition duration-300">support@sieprogramme.com</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-400 mr-3 mt-1">📍</span>
+                <p className="hover:text-white transition duration-300">Kigali Innovation City<br/>Kigali, Rwanda</p>
+              </li>
             </ul>
           </div>
           
           {/* Newsletter */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Stay Updated</h3>
-            <p className="text-gray-300 mb-4">Subscribe to our newsletter for updates.</p>
+            <h3 className="text-xl font-semibold mb-6 text-white">Stay Updated</h3>
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              Subscribe to our newsletter for programme updates and announcements.
+            </p>
             <div className="flex flex-col">
-              <label htmlFor="email" className="text-sm text-gray-400 mb-1">Your email</label>
-              <div className="flex">
+              <div className="relative">
                 <input
                   type="email"
                   id="email"
-                  placeholder="Enter your email"
-                  className="px-4 py-2 rounded-l text-gray-900 focus:outline-none w-full"
+                  placeholder="Your email address"
+                  className="w-full px-5 py-4 rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
                 />
-                <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r font-medium transition">
+                <button className="absolute right-2 top-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition duration-300">
                   Subscribe
                 </button>
               </div>
+              <p className="text-xs text-gray-600 mt-2">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
             </div>
           </div>
         </div>
         
         {/* Copyright */}
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
-          <p>© 2025 WISE Academy. All rights reserved.</p>
+        <div className="border-t border-gray-800 mt-16 pt-8 text-center">
+          <p className="text-gray-500">
+            © {new Date().getFullYear()} SIE Programme. All rights reserved. | 
+            <a href="/privacy" className="hover:text-gray-300 transition duration-300 ml-2">Privacy Policy</a> | 
+            <a href="/terms" className="hover:text-gray-300 transition duration-300 ml-2">Terms of Service</a>
+          </p>
         </div>
       </div>
     </footer>

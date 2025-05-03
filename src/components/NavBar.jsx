@@ -1,37 +1,77 @@
-// components/Navbar.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/SIE.jpg'; // Import your logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black shadow-lg py-2' : 'bg-black/90 backdrop-blur-sm py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-xl font-bold text-gray-900">
-              SIE Programme
+            <Link to="/" className="flex items-center">
+              <img 
+                src={logo} 
+                alt="SIE Programme Logo" 
+                className="h-10 mr-3" 
+              />
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                SIE Programme
+              </span>
             </Link>
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:ml-6 md:flex md:items-center md:space-x-8">
-            <Link to="/" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+            <Link 
+              to="/" 
+              className="text-gray-100 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+            >
               Home
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/about" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+            <Link 
+              to="/about" 
+              className="text-gray-100 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+            >
               About Us
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/team" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-              Our Team
+            <Link 
+              to="/programs" 
+              className="text-gray-100 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+            >
+              Programs
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/partners" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-              Partners
+            <Link 
+              to="/admissions" 
+              className="text-gray-100 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+            >
+              Careers
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/contact" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-              Contact
+            <Link 
+              to="/contact" 
+              className="px-4 py-2 rounded-md bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm font-medium hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-md"
+            >
+              Contact Us
             </Link>
           </div>
           
@@ -39,7 +79,8 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-blue-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-100 hover:text-blue-600 hover:bg-gray-100 focus:outline-none transition-colors duration-300"
+              aria-label="Toggle menu"
             >
               <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -55,22 +96,42 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
-            <Link to="/" className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">
+        <div className="md:hidden bg-black shadow-lg">
+          <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+            <Link 
+              to="/" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
               Home
             </Link>
-            <Link to="/about" className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">
+            <Link 
+              to="/about" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
               About Us
             </Link>
-            <Link to="/team" className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">
-              Our Team
+            <Link 
+              to="/programs" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Programs
             </Link>
-            <Link to="/partners" className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">
-              Partners
+            <Link 
+              to="/admissions" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Careers
             </Link>
-            <Link to="/contact" className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">
-              Contact
+            <Link 
+              to="/contact" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 mt-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact Us
             </Link>
           </div>
         </div>
