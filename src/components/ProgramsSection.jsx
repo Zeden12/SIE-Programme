@@ -189,7 +189,7 @@ const ProgramsSection = () => {
             className="px-8 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-all duration-300"
             onClick={() => console.log('View all programs clicked')}
           >
-            View All Programs (12+)
+            Exprole More
           </button>
         </div>
       </div>
