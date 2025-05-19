@@ -10,6 +10,12 @@ import {
   FaPalette,
   FaCode
 } from 'react-icons/fa';
+import audioImg from '../assets/audio.jpg';
+import videoImg from '../assets/video.jpg';
+import backendImg from '../assets/backend.jpg';
+import frontendImg from '../assets/frontend.jpg';
+import uiImg from '../assets/ui.jpg';
+import fullImg from '../assets/full.jpg';
 import { motion } from 'framer-motion';
 
 const Overview = () => {
@@ -19,37 +25,37 @@ const Overview = () => {
     {
       title: "Video Production",
       description: "Master professional filming, editing, and post-production for film and digital media",
-      image: "/video-production.jpg",
+      image: videoImg,
       icon: <FaFilm className="text-red-500 text-3xl" />
     },
     {
       title: "Audio Production",
       description: "Develop expertise in recording, mixing, sound design, and audio engineering",
-      image: "/audio-production.jpg",
+      image: audioImg,
       icon: <FaMicrophone className="text-purple-500 text-3xl" />
     },
     {
       title: "Full-Stack Development",
       description: "Build complete web applications with both frontend and backend technologies",
-      image: "/fullstack-dev.jpg",
+      image: fullImg,
       icon: <FaServer className="text-blue-500 text-3xl" />
     },
     {
       title: "Frontend Development",
       description: "Create stunning user interfaces with modern frameworks and responsive design",
-      image: "/frontend-dev.jpg",
+      image: frontendImg,
       icon: <FaCode className="text-green-500 text-3xl" />
     },
     {
       title: "Backend Development",
       description: "Develop robust server-side systems, APIs, and database architectures",
-      image: "/backend-dev.jpg",
+      image: backendImg,
       icon: <FaServer className="text-yellow-500 text-3xl" />
     },
     {
       title: "UI/UX Design",
       description: "Craft intuitive user experiences and visually compelling interfaces",
-      image: "/ui-ux-design.jpg",
+      image: uiImg,
       icon: <FaPalette className="text-pink-500 text-3xl" />
     }
   ];

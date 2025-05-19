@@ -6,6 +6,8 @@ import bg1 from '../assets/sie-bg1.jpg';
 import bg2 from '../assets/sie-bg2.jpg';
 import bg3 from '../assets/sie-bg3.jpg';
 import bg4 from '../assets/sie-bg4.jpg';
+import audioImg from '../assets/audio.jpg';
+import videoImg from '../assets/video.jpg';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -18,7 +18,7 @@ const ProgramsPage = () => {
     {
       title: "Video Production",
       schedule: [
-        { day: "Monday/Wednesday", time: "6:00 PM - 8:00 PM" },
+        { day: "Monday - Friday", time: "5:00 PM - 8:00 PM" },
         { day: "Saturday", time: "9:00 AM - 12:00 PM" }
       ],
       materials: [
@@ -27,7 +27,7 @@ const ProgramsPage = () => {
         "Lighting Techniques",
         "Audio Recording Essentials"
       ],
-      duration: "12 Weeks",
+      duration: "3months",
       certification: "Certified Video Producer",
       syllabus: "/syllabus/video-production.pdf",
       overview: "Master professional video production from shooting to post-production"
@@ -35,8 +35,8 @@ const ProgramsPage = () => {
     {
       title: "Audio Engineering",
       schedule: [
-        { day: "Tuesday/Thursday", time: "6:00 PM - 8:00 PM" },
-        { day: "Saturday", time: "10:00 AM - 1:00 PM" }
+        { day: "Monday - Friday", time: "5:00 PM - 8:00 PM" },
+        { day: "Saturday", time: "9:00 AM - 12:00 PM" }
       ],
       materials: [
         "Digital Audio Workstations",
@@ -44,7 +44,7 @@ const ProgramsPage = () => {
         "Microphone Theory",
         "Live Sound Engineering"
       ],
-      duration: "10 Weeks",
+      duration: "3months",
       certification: "Audio Engineer Certification",
       syllabus: "/syllabus/audio-engineering.pdf",
       overview: "Professional training in recording, mixing and mastering audio"
@@ -52,8 +52,8 @@ const ProgramsPage = () => {
     {
       title: "Fullstack Development",
       schedule: [
-        { day: "Monday/Wednesday", time: "6:00 PM - 9:00 PM" },
-        { day: "Sunday", time: "1:00 PM - 4:00 PM" }
+        { day: "Monday - Friday", time: "5:00 PM - 8:00 PM" },
+        { day: "Saturday", time: "9:00 AM - 12:00 PM" }
       ],
       materials: [
         "HTML/CSS/JavaScript Fundamentals",
@@ -62,7 +62,7 @@ const ProgramsPage = () => {
         "API Development",
         "DevOps Basics"
       ],
-      duration: "16 Weeks",
+      duration: "6 Months",
       certification: "Fullstack Developer Certification",
       syllabus: "/syllabus/fullstack-development.pdf",
       overview: "Complete web development training from frontend to backend"
@@ -70,7 +70,8 @@ const ProgramsPage = () => {
     {
       title: "Frontend Development",
       schedule: [
-        { day: "Tuesday/Thursday", time: "5:30 PM - 8:30 PM" }
+        { day: "Monday - Friday", time: "5:00 PM - 8:00 PM" },
+        { day: "Saturday", time: "9:00 AM - 12:00 PM" }
       ],
       materials: [
         "Advanced CSS/Sass",
@@ -79,7 +80,7 @@ const ProgramsPage = () => {
         "State Management",
         "UI/UX Principles"
       ],
-      duration: "12 Weeks",
+      duration: "3 Months",
       certification: "Frontend Developer Certification",
       syllabus: "/syllabus/frontend-development.pdf",
       overview: "Master modern frontend development with React ecosystem"
@@ -87,8 +88,8 @@ const ProgramsPage = () => {
     {
       title: "Backend Development",
       schedule: [
-        { day: "Monday/Wednesday", time: "7:00 PM - 9:00 PM" },
-        { day: "Friday", time: "5:00 PM - 8:00 PM" }
+        { day: "Monday - Friday", time: "5:00 PM - 8:00 PM" },
+        { day: "Saturday", time: "9:00 AM - 12:00 PM" }
       ],
       materials: [
         "Node.js & Express",
@@ -97,7 +98,7 @@ const ProgramsPage = () => {
         "Authentication",
         "Cloud Deployment"
       ],
-      duration: "14 Weeks",
+      duration: "3 Months",
       certification: "Backend Developer Certification",
       syllabus: "/syllabus/backend-development.pdf",
       overview: "Server-side development with Node.js and database systems"
@@ -105,7 +106,8 @@ const ProgramsPage = () => {
     {
       title: "UI/UX Design",
       schedule: [
-        { day: "Saturday", time: "9:00 AM - 3:00 PM" }
+        { day: "Monday - Friday", time: "5:00 PM - 8:00 PM" },
+        { day: "Saturday", time: "9:00 AM - 12:00 PM" }
       ],
       materials: [
         "Design Thinking",
@@ -114,7 +116,7 @@ const ProgramsPage = () => {
         "Prototyping",
         "Design Systems"
       ],
-      duration: "8 Weeks",
+      duration: "2 Months",
       certification: "UI/UX Design Certification",
       syllabus: "/syllabus/ui-ux-design.pdf",
       overview: "User-centered design principles and industry tools"
