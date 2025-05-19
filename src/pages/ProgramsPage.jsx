@@ -123,7 +123,6 @@ const ProgramsPage = () => {
 
   return (
     <div className="bg-gray-50">
-      {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
@@ -145,7 +144,6 @@ const ProgramsPage = () => {
         </div>
       </section>
 
-      {/* Program Highlights */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
@@ -186,7 +184,6 @@ const ProgramsPage = () => {
         </div>
       </section>
 
-      {/* Program Comparison Table */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
@@ -230,7 +227,6 @@ const ProgramsPage = () => {
         </div>
       </section>
 
-      {/* Detailed Program Information */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
@@ -261,7 +257,6 @@ const ProgramsPage = () => {
                 <p className="text-gray-700 mb-6">{program.overview}</p>
                 
                 <div className="grid md:grid-cols-2 gap-8">
-                  {/* Schedule */}
                   <div>
                     <div className="flex items-center mb-4">
                       <FaClock className="text-blue-600 mr-2" />
@@ -277,7 +272,6 @@ const ProgramsPage = () => {
                     </ul>
                   </div>
                   
-                  {/* Learning Materials */}
                   <div>
                     <div className="flex items-center mb-4">
                       <FaBook className="text-blue-600 mr-2" />
@@ -294,7 +288,6 @@ const ProgramsPage = () => {
                   </div>
                 </div>
                 
-                {/* Additional Info */}
                 <div className="grid md:grid-cols-2 gap-8 mt-8">
                   <div className="flex items-center">
                     <FaChalkboardTeacher className="text-blue-600 mr-2" />
@@ -316,8 +309,6 @@ const ProgramsPage = () => {
           ))}
         </div>
       </section>
-
-      {/* Enrollment CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Enroll?</h2>

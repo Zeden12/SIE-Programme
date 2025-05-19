@@ -77,7 +77,6 @@ const Overview = () => {
     }
   ];
 
-  // Auto-rotate slides
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % programmes.length);
@@ -88,7 +87,6 @@ const Overview = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +102,6 @@ const Overview = () => {
           </p>
         </motion.div>
 
-        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {features.map((feature, index) => (
             <motion.div
@@ -125,7 +122,6 @@ const Overview = () => {
           ))}
         </div>
 
-        {/* Programme Slideshow */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -133,7 +129,6 @@ const Overview = () => {
           viewport={{ once: true }}
           className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900 h-[500px]"
         >
-          {/* Slides */}
           {programmes.map((programme, index) => (
             <motion.div
               key={index}
@@ -173,8 +168,6 @@ const Overview = () => {
               </div>
             </motion.div>
           ))}
-
-          {/* Navigation Dots */}
           <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
             {programmes.map((_, index) => (
               <button
@@ -186,8 +179,6 @@ const Overview = () => {
             ))}
           </div>
         </motion.div>
-
-        {/* Programme Quick Links */}
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

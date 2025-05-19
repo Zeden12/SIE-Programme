@@ -60,10 +60,7 @@ const Curriculum = () => {
         </motion.div>
 
         <div className="relative">
-          {/* Progress line */}
           <div className="hidden md:block absolute left-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-green-400 to-orange-400 top-0 -ml-0.5 z-0"></div>
-          
-          {/* Mobile progress line */}
           <div className="md:hidden absolute left-8 h-full w-1 bg-gradient-to-b from-blue-400 via-green-400 to-orange-400 top-0 z-0"></div>
 
           <div className="space-y-12 md:space-y-0">
@@ -75,7 +72,6 @@ const Curriculum = () => {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className={`relative flex flex-col md:flex-row ${i % 2 ? 'md:justify-start' : 'md:justify-end'} items-center`}
               >
-                {/* Phase content */}
                 <div className={`w-full md:w-5/12 p-8 rounded-2xl shadow-lg ${i % 2 ? 'md:mr-auto md:pr-16' : 'md:ml-auto md:pl-16'} bg-white mb-8 md:mb-16 relative z-10 border border-gray-200`}>
                   <div className={`absolute -top-4 ${i % 2 ? 'md:-right-4' : 'md:-left-4'} left-8 w-12 h-12 rounded-full flex items-center justify-center shadow-md ${phase.color}`}>
                     {phase.icon}
@@ -92,8 +88,6 @@ const Curriculum = () => {
                     ))}
                   </ul>
                 </div>
-
-                {/* Phase label - desktop */}
                 <div className={`hidden md:flex items-center justify-center w-24 h-24 rounded-full ${phase.color} shadow-lg absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 border-4 border-white`}>
                   <span className="text-xl font-bold">{phase.phase.split(' ')[1]}</span>
                 </div>
@@ -101,8 +95,7 @@ const Curriculum = () => {
             ))}
           </div>
         </div>
-
-        {/* CTA */}
+        
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -14,14 +14,12 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <section className="relative py-24 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
-      {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-blue-200 opacity-20 blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-purple-200 opacity-20 blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,8 +44,6 @@ const About = () => {
             Shaping the future of digital innovation through hands-on learning and industry-driven expertise
           </motion.p>
         </motion.div>
-
-        {/* Who We Are */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -106,8 +102,6 @@ const About = () => {
             ))}
           </motion.div>
         </motion.div>
-
-        {/* Mission & Vision */}
         <motion.div
           className="grid md:grid-cols-2 gap-8 mb-20"
           initial={{ opacity: 0 }}
@@ -147,8 +141,6 @@ const About = () => {
             </p>
           </motion.div>
         </motion.div>
-
-        {/* Why Join SIE? */}
         <motion.div
           className="mb-20"
           initial={{ opacity: 0 }}
@@ -208,8 +200,6 @@ const About = () => {
             ))}
           </div>
         </motion.div>
-
-        {/* Call to Action */}
         <motion.div
           className="text-center"
           initial={{ opacity: 0 }}

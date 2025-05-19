@@ -34,8 +34,6 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitSuccess(true);
@@ -45,15 +43,12 @@ const ContactPage = () => {
         program: '',
         message: ''
       });
-      
-      // Hide success message after 5 seconds
       setTimeout(() => setSubmitSuccess(false), 5000);
     }, 1500);
   };
 
   return (
     <div className="bg-gray-50">
-      {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
@@ -75,11 +70,9 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Contact Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -173,7 +166,6 @@ const ContactPage = () => {
               </form>
             </motion.div>
 
-            {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -184,8 +176,6 @@ const ContactPage = () => {
                   Contact Information
                   <span className="block w-20 h-1 bg-blue-600 mt-2"></span>
                 </h2>
-
-                {/* Campus Image */}
                 <div className="mb-8 rounded-lg overflow-hidden">
                   <img 
                     src={campusImage} 
@@ -193,8 +183,6 @@ const ContactPage = () => {
                     className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-
-                {/* Contact Details */}
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="bg-blue-100 p-3 rounded-full mr-4">
@@ -241,7 +229,6 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                {/* Social Media */}
                 <div className="mt-8">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Connect With Us</h3>
                   <div className="flex space-x-4">
@@ -262,7 +249,6 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Map Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
@@ -282,7 +268,6 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">

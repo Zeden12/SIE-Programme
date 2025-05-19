@@ -8,10 +8,9 @@ import {
   FaPalette,
   FaDesktop, 
   FaServer,
-  FaMicrophoneAlt as FaAudio  // Using microphone as audio icon
+  FaMicrophoneAlt as FaAudio
 } from 'react-icons/fa';
 
-// Using a placeholder image URL instead of local file
 const placeholderImage = 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80';
 
 const ProgramsSection = () => {
@@ -93,7 +92,6 @@ const ProgramsSection = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -106,8 +104,6 @@ const ProgramsSection = () => {
             Industry-relevant courses designed to launch your tech career
           </p>
         </motion.div>
-
-        {/* Programs Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program) => (
             <motion.div
@@ -118,7 +114,6 @@ const ProgramsSection = () => {
               transition={{ duration: 0.3 }}
               className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300"
             >
-              {/* Program Image */}
               <div className="h-48 overflow-hidden">
                 <img 
                   src={program.image} 
@@ -130,8 +125,6 @@ const ProgramsSection = () => {
                   }}
                 />
               </div>
-
-              {/* Program Badge */}
               <div className="absolute -mt-6 ml-4">
                 <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center">
                   {program.icon}
@@ -139,11 +132,8 @@ const ProgramsSection = () => {
                 </div>
               </div>
 
-              {/* Program Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{program.title}</h3>
-                
-                {/* Rating */}
                 <div className="flex items-center mb-3">
                   <div className="flex text-yellow-400 mr-2">
                     {[...Array(5)].map((_, i) => (
@@ -160,7 +150,6 @@ const ProgramsSection = () => {
 
                 <p className="text-gray-600 mb-4">{program.description}</p>
 
-                {/* Program Meta */}
                 <div className="flex justify-between items-center mb-4">
                   <div className="flex items-center text-gray-500">
                     <FaRegClock className="mr-2" />
@@ -170,8 +159,6 @@ const ProgramsSection = () => {
                     {program.price}
                   </div>
                 </div>
-
-                {/* CTA Button */}
                 <button 
                   className="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all duration-300"
                   onClick={() => console.log(`Enrolling in ${program.title}`)}
@@ -183,7 +170,6 @@ const ProgramsSection = () => {
           ))}
         </div>
 
-        {/* View All Button */}
         <div className="text-center mt-12">
           <button 
             className="px-8 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-all duration-300"

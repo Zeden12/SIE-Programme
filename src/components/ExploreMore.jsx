@@ -1,4 +1,3 @@
-// components/ExploreMore.jsx
 import React from 'react';
 
 const ExploreMore = () => {

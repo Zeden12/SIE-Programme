@@ -4,12 +4,10 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
-      {/* Decorative top border */}
       <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-1 w-full"></div>
       
       <div className="container mx-auto px-4 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Programme Description with Social Links */}
           <div>
             <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               SIE Programme
@@ -36,7 +34,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Quick Links */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-white">Quick Links</h3>
             <ul className="space-y-3">
@@ -73,7 +70,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-white">Contact Us</h3>
             <ul className="space-y-4 text-gray-400">
@@ -98,7 +94,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Newsletter */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-white">Stay Updated</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -123,7 +118,6 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Copyright */}
         <div className="border-t border-gray-800 mt-16 pt-8 text-center">
           <p className="text-gray-500">
             © {new Date().getFullYear()} SIE Programme. All rights reserved. | 

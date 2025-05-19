@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
-// Import your 4 background images
 import bg1 from '../assets/sie-bg1.jpg';
 import bg2 from '../assets/sie-bg2.jpg';
 import bg3 from '../assets/sie-bg3.jpg';
@@ -14,7 +12,6 @@ const Hero = () => {
   
   const backgroundImages = [bg1, bg2, bg3, bg4];
 
-  // Auto-rotate background images
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % backgroundImages.length);
@@ -32,7 +29,6 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Background Image Carousel */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
           <motion.div
@@ -49,8 +45,6 @@ const Hero = () => {
           </motion.div>
         ))}
       </div>
-
-      {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -106,8 +100,6 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* Carousel Controls */}
       <div className="absolute bottom-10 left-0 right-0 z-10 flex justify-center space-x-2">
         {backgroundImages.map((_, index) => (
           <button
