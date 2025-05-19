@@ -10,7 +10,7 @@ import {
   FaFacebook,
   FaPaperPlane
 } from 'react-icons/fa';
-import campusImage from '../assets/sie-bg1.jpg'; // Replace with your image
+import Image from '../assets/SIE.jpg';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -178,7 +178,7 @@ const ContactPage = () => {
                 </h2>
                 <div className="mb-8 rounded-lg overflow-hidden">
                   <img 
-                    src={campusImage} 
+                    src={Image} 
                     alt="SIE Program Campus" 
                     className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
                   />
