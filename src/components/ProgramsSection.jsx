@@ -19,11 +19,10 @@ const ProgramsSection = () => {
       id: 1,
       title: "Video Production",
       description: "Learn professional filming, editing, and post-production techniques for YouTube, documentaries, and commercials.",
-      duration: "12 Weeks",
-      level: "Beginner to Advanced",
-      price: "RWF 200,000",
+      duration: "3 Months",
+      level: "Beginner to Pro level",
       rating: 4.9,
-      students: 120,
+      students: 350,
       icon: <FaVideo className="text-red-500" />,
       image: placeholderImage
     },
@@ -33,9 +32,8 @@ const ProgramsSection = () => {
       description: "Master recording, mixing, mastering and sound design using industry-standard tools and techniques.",
       duration: "3 months",
       level: "beginner to pro level",
-      price: "RWF 200,000",
       rating: 4.7,
-      students: 85,
+      students: 300,
       icon: <FaAudio className="text-blue-500" />,
       image: placeholderImage
     },
@@ -43,9 +41,8 @@ const ProgramsSection = () => {
       id: 3,
       title: "Fullstack Development",
       description: "Become job-ready with PERN and MERN stack (PostgreSQL / MongoDB, Express, React, Node.js) and build complete web applications.",
-      duration: "16 Weeks",
+      duration: "6 Months",
       level: "Beginner to Pro level",
-      price: "RWF 500,000",
       rating: 4.95,
       students: 210,
       icon: <FaCode className="text-green-500" />,
@@ -55,9 +52,8 @@ const ProgramsSection = () => {
       id: 4,
       title: "Frontend development",
       description: "Master React, Next, modern JavaScript and CSS frameworks to build stunning user interfaces.",
-      duration: "10 Weeks",
+      duration: "3 months",
       level: "Beginner to pro level",
-      price: "RWF 300,000",
       rating: 4.8,
       students: 175,
       icon: <FaDesktop className="text-purple-500" />,
@@ -68,10 +64,9 @@ const ProgramsSection = () => {
       title: "Backend Development",
       description: "Learn Node.js, Python, databases, APIs, authentication and deployment for robust server-side development.",
       duration: "3 months",
-      level: "Intermediate",
-      price: "RWF 300,000",
+      level: "Beginner - Intermediate - Pro level",
       rating: 4.85,
-      students: 95,
+      students: 105,
       icon: <FaServer className="text-yellow-500" />,
       image: placeholderImage
     },
@@ -81,7 +76,6 @@ const ProgramsSection = () => {
       description: "User research, wireframing, prototyping and design systems using Figma and Adobe XD.",
       duration: "2 months",
       level: "All Levels",
-      price: "RWF 350,000",
       rating: 4.75,
       students: 140,
       icon: <FaPalette className="text-pink-500" />,
@@ -168,15 +162,6 @@ const ProgramsSection = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <button 
-            className="px-8 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-all duration-300"
-            onClick={() => console.log('View all programs clicked')}
-          >
-            Exprole More
-          </button>
         </div>
       </div>
     </section>

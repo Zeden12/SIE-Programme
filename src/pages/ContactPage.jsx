@@ -201,8 +201,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="text-gray-600">+250 788 123 456</p>
-                      <p className="text-gray-600">+250 789 987 654</p>
+                      <p className="text-gray-600">+250 788 338 877</p>
                     </div>
                   </div>
 
@@ -212,8 +211,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                      <p className="text-gray-600">admissions@sieprogram.rw</p>
-                      <p className="text-gray-600">info@sieprogram.rw</p>
+                      <p className="text-gray-600">sieprogram1@gmail.com</p>
                     </div>
                   </div>
 
@@ -223,7 +221,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Office Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
                       <p className="text-gray-600">Saturday: 9:00 AM - 3:00 PM</p>
                     </div>
                   </div>

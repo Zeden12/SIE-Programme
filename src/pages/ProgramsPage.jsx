@@ -12,6 +12,7 @@ import {
   FaPhoneAlt
 } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import ProgramsSection from '../components/ProgramsSection';
 
 const ProgramsPage = () => {
   const programDetails = [
@@ -228,6 +229,8 @@ const ProgramsPage = () => {
           </div>
         </div>
       </section>
+
+      <ProgramsSection />
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
