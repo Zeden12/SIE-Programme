@@ -8,6 +8,8 @@ import {
   FaLinkedin,
   FaTwitter,
   FaFacebook,
+  FaYoutube,
+  FaInstagram,
   FaPaperPlane
 } from 'react-icons/fa';
 import Image from '../assets/SIE.jpg';
@@ -230,14 +232,20 @@ const ContactPage = () => {
                 <div className="mt-8">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Connect With Us</h3>
                   <div className="flex space-x-4">
-                    <a href="#" className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
+                    <a href="https://www.facebook.com/profile.php?id=61572630885590 " className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
                       <FaLinkedin className="text-xl" />
                     </a>
-                    <a href="#" className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
+                    <a href="https://www.facebook.com/profile.php?id=61572630885590 " className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
                       <FaTwitter className="text-xl" />
                     </a>
-                    <a href="#" className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
+                    <a href="https://www.facebook.com/profile.php?id=61572630885590 " className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
                       <FaFacebook className="text-xl" />
+                    </a>
+                    <a href="https://www.instagram.com/sie_program?igsh=MXZmYWt5emdraGR4NQ== " className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
+                      <FaInstagram className="text-xl" />
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61572630885590 " className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
+                      <FaYoutube className="text-xl" />
                     </a>
                   </div>
                 </div>
