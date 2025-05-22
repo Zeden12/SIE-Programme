@@ -9,6 +9,10 @@ import {
 } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import ZImage from '../assets/z.jpg';
+import ZedImage from '../assets/zed.jpg';
+import MyImage from '../assets/myphoto.jpg';
+import ZiImage from '../assets/zi.jpg';
 
 const CareerPage = () => {
   const jobOpenings = [
@@ -37,16 +41,28 @@ const CareerPage = () => {
 
   const successStories = [
     {
-      name: "Eric N.",
-      role: "Software Engineer at Andela",
+      name: "Ernest H.K",
+      role: "Full-Stack Developer at DEVNEX Hi-Tech",
       quote: "The career support from SIE helped me negotiate my first salary 30% higher than I expected.",
-      image: "https://randomuser.me/api/portraits/men/42.jpg"
+      image: ZImage
+    },
+    {
+      name: "Phionah U.",
+      role: "Producer at ROS Music",
+      quote: "The portfolio review sessions were instrumental in helping me land my dream job.",
+      image: ZedImage
+    },
+    {
+      name: "Amin G.",
+      role: "Audio Producer at Internews",
+      quote: "The portfolio review sessions were instrumental in helping me land my dream job.",
+      image: MyImage
     },
     {
       name: "Claudine K.",
-      role: "UX Designer at KLab",
+      role: "UX Designer at Umucyo Hub",
       quote: "The portfolio review sessions were instrumental in helping me land my dream job.",
-      image: "https://randomuser.me/api/portraits/women/63.jpg"
+      image: MyImage
     }
   ];
 
