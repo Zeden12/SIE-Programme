@@ -30,7 +30,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden pt-18 sm:pt-20">
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
           <motion.div
