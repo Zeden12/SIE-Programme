@@ -26,7 +26,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-5xl font-bold mb-6 pt-18 sm:pt-20"
+            className="text-4xl md:text-5xl font-bold mb-6 pt-20 sm:pt-20"
           >
             About <span className="text-blue-200">SIE Programme</span>
           </motion.h1>
@@ -239,21 +239,21 @@ const About = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
-                  name: "Amina Mohammed",
-                  role: "Frontend Developer at TechSolutions",
-                  quote: "SIE's project-based approach gave me the portfolio that got me hired within weeks of graduating.",
+                  name: "Amina INEZA",
+                  role: "Founder & CTO, Devnex Hitech",
+                  quote: "SIE Programme graduates have consistently demonstrated outstanding technical and leadership skills at Devnex Hitech. Their contributions have accelerated our growth and innovation.",
                   icon: <FaAward className="text-yellow-500" />
                 },
                 {
-                  name: "David Okafor",
-                  role: "Video Producer at MediaWorks",
-                  quote: "The industry connections I made through SIE led directly to my current position.",
+                  name: "David Kagabo",
+                  role: "CEO, Ros Music",
+                  quote: "Hiring from SIE has been a game-changer for Ros Music. Their alumni bring fresh ideas and are ready to make an impact from day one.",
                   icon: <FaAward className="text-yellow-500" />
                 },
                 {
-                  name: "Sarah Johnson",
-                  role: "UI/UX Designer at DesignHub",
-                  quote: "The practical skills I gained were immediately applicable to real client projects.",
+                  name: "Sarah Mukamana",
+                  role: "Co-Founder, Inzoom Capture",
+                  quote: "We value SIE Programme graduates for their creativity and professionalism. They play a key role in driving our projects forward.",
                   icon: <FaAward className="text-yellow-500" />
                 }
               ].map((story, index) => (

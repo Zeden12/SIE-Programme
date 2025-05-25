@@ -6,8 +6,8 @@ import bg1 from '../assets/sie-bg1.jpg';
 import bg2 from '../assets/sie-bg2.jpg';
 import bg3 from '../assets/sie-bg3.jpg';
 import bg4 from '../assets/sie-bg4.jpg';
-import audioImg from '../assets/audio.jpg';
-import videoImg from '../assets/video.jpg';
+
+console.log(bg1, bg2, bg3, bg4);
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,7 +30,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden pt-18 sm:pt-20">
+    <section className="relative h-screen min-h-[500px] sm:min-h-[600px] md:h-screen overflow-hidden pt-20 sm:pt-20">
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
           <motion.div
@@ -47,7 +47,7 @@ const Hero = () => {
           </motion.div>
         ))}
       </div>
-      <div className="relative z-10 h-full flex flex-col justify-center px-6 lg:px-8">
+      <div className="relative z-10 h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 pb-24 sm:pb-0">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -87,7 +87,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link 
-              to="/apply" 
+              to="/programs" 
               className="px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center"
             >
               Apply Now <FaArrowRight className="ml-2" />
@@ -102,13 +102,14 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      <div className="absolute bottom-10 left-0 right-0 z-10 flex justify-center space-x-2">
+      <div className="absolute bottom-6 left-0 right-0 z-10 flex justify-center space-x-3 sm:space-x-2">
         {backgroundImages.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-white' : 'bg-gray-400'}`}
+            className={`w-4 h-4 sm:w-3 sm:h-3 rounded-full border-2 border-white focus:outline-none transition ${index === currentSlide ? 'bg-white' : 'bg-gray-400'}`}
             aria-label={`Go to slide ${index + 1}`}
+            style={{ touchAction: 'manipulation' }}
           />
         ))}
       </div>
