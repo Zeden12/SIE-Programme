@@ -211,7 +211,7 @@ const CareerPage = () => {
               Don't see your perfect role? We're always interested in meeting talented individuals.
             </p>
             <a
-              href="https://docs.google.com/forms/d/your-general-application-form"
+              href="https://forms.gle/MbVvVmQML2amF3bz9"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800"

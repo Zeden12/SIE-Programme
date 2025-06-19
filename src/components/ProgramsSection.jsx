@@ -20,12 +20,8 @@ import backendImg from '../assets/backend.jpg';
 import designImg from '../assets/ui.jpg';
 
 const FORM_URLS = {
-  VIDEO: 'https://docs.google.com/forms/...',
-  AUDIO: 'https://docs.google.com/forms/...',
-  FULLSTACK: 'https://docs.google.com/forms/...',
-  FRONTEND: 'https://docs.google.com/forms/...',
-  BACKEND: 'https://docs.google.com/forms/...',
-  DESIGN: 'https://docs.google.com/forms/...'
+  FORM: 'https://forms.gle/MbVvVmQML2amF3bz9',
+
 };
 
 const ProgramsSection = () => {
@@ -40,7 +36,7 @@ const ProgramsSection = () => {
       students: 350,
       icon: <FaVideo className="text-red-500" />,
       image: videoProductionImg,
-      formUrl: FORM_URLS.VIDEO
+      formUrl: FORM_URLS.FORM
     },
     {
       id: 2,
@@ -52,7 +48,7 @@ const ProgramsSection = () => {
       students: 300,
       icon: <FaAudio className="text-blue-500" />,
       image: audioProductionImg,
-      formUrl: FORM_URLS.AUDIO
+      formUrl: FORM_URLS.FORM
     },
     {
       id: 3,
@@ -64,7 +60,7 @@ const ProgramsSection = () => {
       students: 210,
       icon: <FaCode className="text-green-500" />,
       image: fullstackImg,
-      formUrl: FORM_URLS.FULLSTACK
+      formUrl: FORM_URLS.FORM
     },
     {
       id: 4,
@@ -76,7 +72,7 @@ const ProgramsSection = () => {
       students: 175,
       icon: <FaDesktop className="text-purple-500" />,
       image: frontendImg,
-      formUrl: FORM_URLS.FRONTEND
+      formUrl: FORM_URLS.FORM
     },
     {
       id: 5,
@@ -88,7 +84,7 @@ const ProgramsSection = () => {
       students: 105,
       icon: <FaServer className="text-yellow-500" />,
       image: backendImg,
-      formUrl: FORM_URLS.BACKEND
+      formUrl: FORM_URLS.FORM
     },
     {
       id: 6,
@@ -100,17 +96,12 @@ const ProgramsSection = () => {
       students: 140,
       icon: <FaPalette className="text-pink-500" />,
       image: designImg,
-      formUrl: FORM_URLS.DESIGN
+      formUrl: FORM_URLS.FORM
     }
   ];
 
   const handleEnrollClick = (formUrl) => {
-    // Open form in new tab
     window.open(formUrl, '_blank', 'noopener,noreferrer');
-    
-    // Optional: Track enrollment clicks
-    console.log('Enrollment form opened:', formUrl);
-    // You can add analytics here
   };
 
   return (
@@ -185,7 +176,7 @@ const ProgramsSection = () => {
 
                   </div>
                   <button 
-                    className="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all duration-300 flex items-center justify-center"
+                    className="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all duration-300 flex items-center justify-center cursor-pointer"
                     onClick={() => handleEnrollClick(program.formUrl)}
                   >
                     Enroll Now <FaExternalLinkAlt className="ml-2" />

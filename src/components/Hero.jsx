@@ -87,7 +87,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link 
-              to="/programs" 
+              to="https://forms.gle/MbVvVmQML2amF3bz9" 
               className="px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center"
             >
               Apply Now <FaArrowRight className="ml-2" />

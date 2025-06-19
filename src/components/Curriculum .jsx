@@ -148,7 +148,7 @@ const Curriculum = () => {
           className="text-center mt-16"
         >
           <a
-            href="https://docs.google.com/forms/your-form-link"
+            href="https://forms.gle/MbVvVmQML2amF3bz9"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105 flex items-center mx-auto w-fit"
