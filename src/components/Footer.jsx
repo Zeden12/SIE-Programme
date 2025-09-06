@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              SIE Programme
+              SKAFF Academy
             </h2>
             <p className="text-sm text-gray-500 mb-4 font-medium">
               Powered by{" "}
@@ -80,7 +80,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition duration-300 flex items-center group"
                 >
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition"></span>
-                  About SIE
+                  About SKAFF Academy
                 </a>
               </li>
               <li>
@@ -174,7 +174,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-16 pt-8 text-center">
           <p className="text-gray-500">
-            © {new Date().getFullYear()} SIE Programme. All rights reserved. |
+            © {new Date().getFullYear()} SKAFF Academy. All rights reserved. |
             <a
               href="/privacy"
               className="hover:text-gray-300 transition duration-300 ml-2"

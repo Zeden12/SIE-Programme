@@ -32,11 +32,11 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <img 
                 src={logo} 
-                alt="SIE Programme Logo" 
+                alt="SKAFF Academy Logo" 
                 className="h-10 mr-3" 
               />
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                SIE Programme
+                SKAFF Academy
               </span>
             </Link>
           </div>

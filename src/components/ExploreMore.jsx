@@ -6,7 +6,7 @@ const ExploreMore = () => {
       <div className="container mx-auto px-4 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Transform Your Future?</h3>
         <p className="text-gray-300 max-w-2xl mx-auto mb-8 text-lg">
-          Join the SIE Programme and gain access to cutting-edge technology education that prepares you for tomorrow's challenges.
+          Join the SKAFF Academy and gain access to cutting-edge technology education that prepares you for tomorrow's challenges.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { 
   FaMapMarkerAlt, 
   FaPhoneAlt, 
@@ -67,7 +66,7 @@ const ContactPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Get in touch with our admissions team to start your SIE journey
+            Get in touch with our admissions team to start your SKAFF Academy journey
           </motion.p>
         </div>
       </section>
@@ -181,7 +180,7 @@ const ContactPage = () => {
                 <div className="mb-8 rounded-lg overflow-hidden">
                   <img 
                     src={Image} 
-                    alt="SIE Program Campus" 
+                    alt="SKAFF Academy Campus" 
                     className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -262,7 +261,7 @@ const ContactPage = () => {
           </h2>
           <div className="rounded-xl overflow-hidden shadow-xl">
             <iframe
-              title="SIE Program Location"
+              title="SKAFF Academy Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.490318045897!2d30.0913463153285!3d-1.954357537934562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca76b5e9d36e9%3A0x5a9f5a5e5e5e5e5e!2sKigali%20Innovation%20City!5e0!3m2!1sen!2srw!4v1620000000000!5m2!1sen!2srw"
               width="100%"
               height="450"

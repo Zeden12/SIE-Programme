@@ -57,7 +57,7 @@ const Hero = () => {
           >
             <div className="inline-flex items-center bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium shadow-lg">
               <span className="h-2 w-2 bg-white rounded-full mr-2 animate-pulse"></span>
-              <span>SIE Programme</span>
+              <span>SKAFF Academy</span>
             </div>
           </motion.div>
 
@@ -77,7 +77,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-gray-300 mb-10 max-w-2xl"
           >
-            The SIE Programme empowers students with cutting-edge skills and knowledge to solve real-world challenges in their communities.
+            The SKAFF Academy empowers students with cutting-edge skills and knowledge to solve real-world challenges in their communities.
           </motion.p>
 
           <motion.div

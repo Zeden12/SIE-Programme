@@ -14,7 +14,7 @@ import Boy1Image from '../assets/boy1.jpg';
 import Boy2Image from '../assets/boy2.jpg';
 import Girl1Image from '../assets/girl1.jpg';
 import Girl2Image from '../assets/girl2.jpg';
-import { b } from 'framer-motion/client';
+
 
 const CareerPage = () => {
   const jobOpenings = [
@@ -56,7 +56,7 @@ const CareerPage = () => {
     {
       name: "Ernest H.K",
       role: "Full-Stack Developer at DEVNEX Hi-Tech",
-      quote: "The career support from SIE helped me negotiate my first salary 30% higher than I expected.",
+      quote: "The career support from SKAFF Academy helped me negotiate my first salary 30% higher than I expected.",
       image: Boy1Image,
       testimonial: "After completing the Fullstack Development program, I received multiple job offers and career coaching that helped me choose the best opportunity."
     },
@@ -65,7 +65,7 @@ const CareerPage = () => {
       role: "Producer at ROS Music",
       quote: "The portfolio review sessions were instrumental in helping me land my dream job.",
       image: Girl1Image,
-      testimonial: "SIE's industry connections introduced me to key players in Rwanda's music production scene, leading to my current position."
+      testimonial: "SKAFF Academy's industry connections introduced me to key players in Rwanda's music production scene, leading to my current position."
     },
     {
       name: "Amin G.",
@@ -79,7 +79,7 @@ const CareerPage = () => {
       role: "UX Designer at Umucyo Hub",
       quote: "The career fairs gave me direct access to hiring managers.",
       image: Girl2Image,
-      testimonial: "I secured three interviews through SIE's employer network before graduating from the UI/UX program."
+      testimonial: "I secured three interviews through SKAFF Academy's employer network before graduating from the UI/UX program."
     }
   ];
 
@@ -93,7 +93,7 @@ const CareerPage = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold mb-6 pt-20 sm:pt-20"
           >
-            Build Your Future With SIE
+            Build Your Future With SKAFF Academy
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl max-w-3xl mx-auto mb-8"
@@ -229,7 +229,7 @@ const CareerPage = () => {
               Alumni <span className="text-blue-600">Success</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear how SIE launched careers in tech and creative industries
+              Hear how SKAFF Academy launched careers in tech and creative industries
             </p>
           </div>
 
