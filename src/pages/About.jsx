@@ -28,7 +28,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold mb-6 pt-20 sm:pt-20"
           >
-            About <span className="text-blue-200">SIE Programme</span>
+            About <span className="text-blue-200">SKAFF Academy</span>
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl max-w-3xl mx-auto mb-8"
@@ -67,7 +67,7 @@ const About = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              The <span className="font-semibold text-blue-600">SIE Programme</span> is a cutting-edge educational initiative that bridges the gap between academic learning and real-world industry demands. Founded in 2020, we've successfully trained over 2,500 students across 6 specialized digital disciplines, with 87% of our graduates securing employment or starting their own ventures within 3 months of completion.
+              The <span className="font-semibold text-blue-600">SKAFF Academy</span> is a cutting-edge educational initiative that bridges the gap between academic learning and real-world industry demands. Founded in 2020, we've successfully trained over 2,500 students across 6 specialized digital disciplines, with 87% of our graduates securing employment or starting their own ventures within 3 months of completion.
             </motion.p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 mb-8">
@@ -178,7 +178,7 @@ const About = () => {
               initial={{ y: 20 }}
               whileInView={{ y: 0 }}
             >
-              Why <span className="text-blue-600">SIE Programme?</span>
+              Why <span className="text-blue-600">SKAFF Academy?</span>
             </motion.h3>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -241,19 +241,19 @@ const About = () => {
                 {
                   name: "Amina INEZA",
                   role: "Founder & CTO, Devnex Hitech",
-                  quote: "SIE Programme graduates have consistently demonstrated outstanding technical and leadership skills at Devnex Hitech. Their contributions have accelerated our growth and innovation.",
+                  quote: "SKAFF Academy graduates have consistently demonstrated outstanding technical and leadership skills at Devnex Hitech. Their contributions have accelerated our growth and innovation.",
                   icon: <FaAward className="text-yellow-500" />
                 },
                 {
                   name: "David Kagabo",
                   role: "CEO, Ros Music",
-                  quote: "Hiring from SIE has been a game-changer for Ros Music. Their alumni bring fresh ideas and are ready to make an impact from day one.",
+                  quote: "Hiring from SKAFF Academy has been a game-changer for Ros Music. Their alumni bring fresh ideas and are ready to make an impact from day one.",
                   icon: <FaAward className="text-yellow-500" />
                 },
                 {
                   name: "Sarah Mukamana",
                   role: "Co-Founder, Inzoom Capture",
-                  quote: "We value SIE Programme graduates for their creativity and professionalism. They play a key role in driving our projects forward.",
+                  quote: "We value SKAFF Academy graduates for their creativity and professionalism. They play a key role in driving our projects forward.",
                   icon: <FaAward className="text-yellow-500" />
                 }
               ].map((story, index) => (
@@ -288,7 +288,7 @@ const About = () => {
               initial={{ y: 20 }}
               whileInView={{ y: 0 }}
             >
-              Ready to transform your career with SIE?
+              Ready to transform your career with SKAFF Academy?
             </motion.p>
             <motion.div
               whileHover={{ scale: 1.05 }}

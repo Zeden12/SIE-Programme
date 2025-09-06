@@ -130,7 +130,7 @@ const Footer = () => {
                 <span className="text-blue-400 mr-3 mt-1">✉</span>
                 <div>
                   <p className="hover:text-white transition duration-300">
-                    sieprogram1@gmail.com
+                    skaffacademy@gmail.com
                   </p>
                 </div>
               </li>
